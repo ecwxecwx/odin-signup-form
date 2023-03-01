@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  vertical-align: baseline; }
 
 html {
   font-size: calc(calc(100*10/16) * 1%); }
@@ -27,21 +28,42 @@ h3 {
   font-size: 4rem;
   letter-spacing: .1rem; }
 
-legend, input, p, button, label, figcaption, a, a:visited, a:active {
+legend, input, p, button, label, figcaption, a:link, a:visited, a:hover, a:focus, a:active {
   font-family: Roboto, sans-serif; }
 
 legend {
   font-size: 2.4rem;
   font-weight: bold; }
 
-input, p, button, label {
+input, p, button {
   font-size: 1.6rem; }
 
-figcaption, a, a:visited, a:active {
+label {
+  text-transform: uppercase;
+  letter-spacing: .2;
+  color: rgba(0, 0, 0, 0.5); }
+
+figcaption {
   font-size: 1.2rem; }
 
-a, a:visited, a:active {
-  color: white; }
+.u-center-flex {
+  justify-content: center;
+  align-items: center; }
+
+.u-br-xxs {
+  border-radius: .4rem; }
+
+.u-br-xs {
+  border-radius: .8rem; }
+
+.u-br-sm {
+  border-radius: 1.6rem; }
+
+.u-spacer-xs {
+  margin-top: .4rem; }
+
+.u-spacer-sm {
+  margin-top: .8rem; }
 
 button {
   padding: .8rem 2.4rem; }
@@ -51,17 +73,34 @@ button {
   color: white;
   border: none; }
 
-#form-layout {
-  display: flex; }
+.link-on-light {
+  color: olivedrab;
+  text-decoration: none; }
 
-#signup, .cover-layout, .logo {
+.link-on-dark {
+  color: white; }
+
+label {
+  display: flex;
+  flex-direction: column; }
+
+input {
+  background: whitesmoke;
+  height: 3.2rem;
+  border: 0; }
+
+:root {
+  --cover-size: 40%; }
+
+#signup, .cover-layout, .logo, .signup-layout, .row {
   display: flex; }
 
 #signup {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  background-color: beige; }
   #signup .cover-layout {
-    width: 40%;
+    width: var(--cover-size);
     position: relative;
     background: url(assets/cover.jpeg);
     background-repeat: no-repeat;
@@ -71,12 +110,11 @@ button {
       color: white;
       bottom: 2%;
       text-align: center;
-      width: 100%; }
+      width: 100%;
+      opacity: .5; }
     #signup .cover-layout .logo {
       background: rgba(0, 0, 0, 0.5);
       height: 8rem;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       position: absolute;
       padding: 1.6rem 0;
@@ -85,5 +123,19 @@ button {
         max-width: 100%;
         max-height: 100%;
         margin-right: .8rem; }
-  #signup .form-layout {
-    width: 70%; }
+  #signup .signup-layout {
+    flex-direction: column;
+    width: calc(100% - var(--cover-size));
+    padding: 10.4rem;
+    row-gap: 3.2rem;
+    justify-content: center; }
+    #signup .signup-layout__fields {
+      background: white;
+      box-shadow: 0 0.8rem 5rem rgba(0, 0, 0, 0.2);
+      padding: 3.2rem 2.4rem; }
+      #signup .signup-layout__fields legend {
+        color: grey; }
+      #signup .signup-layout__fields > *:not(:first-child) {
+        margin-top: 2.4rem; }
+      #signup .signup-layout__fields .row {
+        column-gap: 2.4rem; }

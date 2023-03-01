@@ -1,3 +1,10 @@
-#form-layout {
+label {
     display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: whitesmoke;
+    height: 3.2rem;
+    border: 0;
 }

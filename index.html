@@ -19,50 +19,69 @@
           srcset=""
         /> -->
         <figcaption class="cover-layout__credit">
-          Photo by <a href="">Halie West</a> on <a href="">Unsplash</a>
+          Photo by <a class="link-on-dark" href="">Halie West</a> on
+          <a class="link-on-dark" href="">Unsplash</a>
         </figcaption>
-        <div class="logo">
+        <div class="logo u-center-flex">
           <img class="logo__image" src="assets/logo.png" alt="" srcset="" />
           <h1 class="logo__text">ODIN</h1>
         </div>
       </div>
 
-      <div class="login-layout">
+      <div class="signup-layout">
         <h3>Create an account</h3>
 
-        <form action="" method="post">
+        <form
+          class="signup-layout__fields u-br-sm"
+          action=""
+          method="post"
+        >
           <legend>Let's do this!</legend>
 
           <div class="row">
-            <label for="first-name"> First name</label>
-            <input type="text" name="first-name" id="first-name" />
+            <label for="first-name">
+              First name
+              <input type="text" name="first-name" class="u-spacer-xs u-br-xxs" id="first-name" />
+            </label>
 
-            <label for="last-name">Last name</label>
-            <input type="text" name="last-name" id="" />
+            <label for="last-name"
+              >Last name
+              <input type="text" name="last-name" class="u-spacer-xs u-br-xxs" id="last-name" />
+            </label>
           </div>
 
           <div class="row">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="" />
+            <label for="email"
+              >Email
+              <input type="email" name="email" class="u-spacer-xs u-br-xxs" id="email" />
+            </label>
 
-            <label for="phone-number">Phone number</label>
-            <input type="number" name="phone-number" id="" />
+            <label for="phone-number"
+              >Phone number
+              <input type="number" name="phone-number" class="u-spacer-xs u-br-xxs" id="phone-number" />
+            </label>
           </div>
 
           <div class="row">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <label for="password"
+              >Password
+              <input type="password" name="password" class="u-spacer-xs u-br-xxs" id="password" />
+            </label>
 
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" name="confirm-password" id="password" />
+            <label for="confirm-password"
+              >Confirm Password
+              <input type="password" name="confirm-password"  class="u-spacer-xs u-br-xxs" id="password" />
+            </label>
           </div>
 
           <div class="row">
-            <button class="button-pri" type="submit">Create Account</button>
+            <button class="button-pri u-spacer-sm u-br-xxs" type="submit">Create Account</button>
           </div>
         </form>
 
-        <figcaption>Already have an account? <a href="">Log in</a></figcaption>
+        <p>
+          Already have an account? <a class="link-on-light" href="">Log in</a>
+        </p>
       </div>
     </section>
   </body>

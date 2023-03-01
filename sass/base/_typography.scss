@@ -19,9 +19,10 @@ h3 {
     font-family: Climate Crisis, Arial, Helvetica, sans-serif;
     font-size: 4rem;
     letter-spacing: .1rem;
+    // color: darkgreen;
 }
 
-legend, input, p, button, label, figcaption, a, a:visited, a:active {
+legend, input, p, button, label, figcaption, a:link, a:visited, a:hover, a:focus, a:active {
     font-family: Roboto, sans-serif;
 }
 
@@ -30,14 +31,17 @@ legend {
     font-weight: bold;
 }
 
-input, p, button, label {
+input, p, button {
     font-size: 1.6rem;
 }
 
-figcaption, a, a:visited, a:active {
+label {
+    text-transform: uppercase;
+    letter-spacing: .2;
+    color: rgba($color: #000000, $alpha: .5);
+}
+
+figcaption {
     font-size: 1.2rem;
 }
 
-a, a:visited, a:active {
-    color: white;
-}
