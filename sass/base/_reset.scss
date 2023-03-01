@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    // vertical-align: baseline;
+}
+
+html {
+    font-size: calc(calc(100*10/16) * 1%); // To make 1rem = 10px
+}
+

@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: calc(calc(100*10/16) * 1%); }
+
+@font-face {
+  font-family: 'Climate Crisis';
+  src: url("font/Climate_Crisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf"); }
+
+@font-face {
+  font-family: 'Norse Bold';
+  src: url("font/font.otf"); }
+
+.logo__text {
+  font-family: 'Norse Bold', Arial, Helvetica, sans-serif;
+  font-size: 5.6rem;
+  color: white;
+  height: 4.4rem; }
+
+h3 {
+  font-family: Climate Crisis, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  letter-spacing: .1rem; }
+
+legend, input, p, button, label, figcaption, a, a:visited, a:active {
+  font-family: Roboto, sans-serif; }
+
+legend {
+  font-size: 2.4rem;
+  font-weight: bold; }
+
+input, p, button, label {
+  font-size: 1.6rem; }
+
+figcaption, a, a:visited, a:active {
+  font-size: 1.2rem; }
+
+a, a:visited, a:active {
+  color: white; }
+
+button {
+  padding: .8rem 2.4rem; }
+
+.button-pri {
+  background: olivedrab;
+  color: white;
+  border: none; }
+
+#form-layout {
+  display: flex; }
+
+#signup, .cover-layout, .logo {
+  display: flex; }
+
+#signup {
+  width: 100vw;
+  height: 100vh; }
+  #signup .cover-layout {
+    width: 40%;
+    position: relative;
+    background: url(assets/cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #signup .cover-layout__credit {
+      position: absolute;
+      color: white;
+      bottom: 2%;
+      text-align: center;
+      width: 100%; }
+    #signup .cover-layout .logo {
+      background: rgba(0, 0, 0, 0.5);
+      height: 8rem;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      padding: 1.6rem 0;
+      top: 30%; }
+      #signup .cover-layout .logo__image {
+        max-width: 100%;
+        max-height: 100%;
+        margin-right: .8rem; }
+  #signup .form-layout {
+    width: 70%; }

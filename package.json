@@ -1,0 +1,19 @@
+{
+  "name": "odin-signup-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecwxecwx/odin-signup-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecwxecwx/odin-signup-form/issues"
+  },
+  "homepage": "https://github.com/ecwxecwx/odin-signup-form#readme"
+}
