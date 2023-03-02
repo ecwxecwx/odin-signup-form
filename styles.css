@@ -32,15 +32,18 @@ legend, input, p, button, label, figcaption, a:link, a:visited, a:hover, a:focus
   font-family: Roboto, sans-serif; }
 
 legend {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: bold; }
 
-input, p, button {
+input, button {
+  font-size: 1.4rem; }
+
+p {
   font-size: 1.6rem; }
 
-label {
+label span:first-of-type {
   text-transform: uppercase;
-  letter-spacing: .2;
+  letter-spacing: .3px;
   color: rgba(0, 0, 0, 0.5); }
 
 figcaption {
@@ -66,7 +69,7 @@ figcaption {
   margin-top: .8rem; }
 
 button {
-  padding: .8rem 2.4rem; }
+  padding: 1rem 2.8rem; }
 
 .button-pri {
   background: olivedrab;
@@ -80,14 +83,30 @@ button {
 .link-on-dark {
   color: white; }
 
+label, .error-message {
+  display: block; }
+
 label {
-  display: flex;
-  flex-direction: column; }
+  width: 100%;
+  max-width: 20rem; }
+  label .error-message {
+    width: 100%;
+    margin-top: .8rem;
+    color: red; }
 
 input {
   background: whitesmoke;
-  height: 3.2rem;
-  border: 0; }
+  border: 0;
+  width: 100%;
+  padding: 1rem;
+  margin-top: .8rem;
+  box-sizing: border-box; }
+
+input:focus {
+  outline: 1px solid lightblue; }
+
+.input--error {
+  outline: 1px solid red; }
 
 :root {
   --cover-size: 40%; }
@@ -138,4 +157,4 @@ input {
       #signup .signup-layout__fields > *:not(:first-child) {
         margin-top: 2.4rem; }
       #signup .signup-layout__fields .row {
-        column-gap: 2.4rem; }
+        column-gap: 4rem; }

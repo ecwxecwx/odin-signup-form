@@ -1,10 +1,32 @@
+label, .error-message {
+    display: block;
+}
+
 label {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 20rem;
+
+    .error-message {
+        width: 100%;
+        margin-top: .8rem;
+        color: red;
+    }
+    
 }
 
 input {
     background: whitesmoke;
-    height: 3.2rem;
     border: 0;
+    width: 100%;
+    padding: 1rem;
+    margin-top: .8rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: 1px solid lightblue;
+}
+
+.input--error {
+    outline: 1px solid red;   
 }

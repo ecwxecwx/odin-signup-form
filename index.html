@@ -31,51 +31,85 @@
       <div class="signup-layout">
         <h3>Create an account</h3>
 
-        <form
-          class="signup-layout__fields u-br-sm"
-          action=""
-          method="post"
-        >
+        <form class="signup-layout__fields u-br-sm" action="" method="post">
           <legend>Let's do this!</legend>
 
           <div class="row">
             <label for="first-name">
-              First name
-              <input type="text" name="first-name" class="u-spacer-xs u-br-xxs" id="first-name" />
+              <span>First name*</span>
+              <input
+                type="text"
+                name="first-name"
+                class="u-br-xxs input--error"
+                id="first-name"
+                required
+              />
+              <span class="error-message">This field is required</span>
             </label>
 
-            <label for="last-name"
-              >Last name
-              <input type="text" name="last-name" class="u-spacer-xs u-br-xxs" id="last-name" />
+            <label for="last-name">
+              <span>Last name</span>
+              <input
+                type="text"
+                name="last-name"
+                class="u-br-xxs"
+                id="last-name"
+              />
             </label>
           </div>
 
           <div class="row">
             <label for="email"
-              >Email
-              <input type="email" name="email" class="u-spacer-xs u-br-xxs" id="email" />
+              ><span>Email*</span>
+              <input
+                type="email"
+                name="email"
+                class="u-br-xxs"
+                id="email"
+                required
+              />
             </label>
 
             <label for="phone-number"
-              >Phone number
-              <input type="number" name="phone-number" class="u-spacer-xs u-br-xxs" id="phone-number" />
+              ><span>Phone number*</span>
+              <input
+                type="tel"
+                name="phone-number"
+                class="u-br-xxs"
+                id="phone-number"
+                required
+              />
             </label>
           </div>
 
           <div class="row">
             <label for="password"
-              >Password
-              <input type="password" name="password" class="u-spacer-xs u-br-xxs" id="password" />
+              ><span>Password*</span>
+              <input
+                type="password"
+                name="password"
+                class="u-br-xxs"
+                id="password"
+                required
+              />
             </label>
 
             <label for="confirm-password"
-              >Confirm Password
-              <input type="password" name="confirm-password"  class="u-spacer-xs u-br-xxs" id="password" />
+              ><span>Confirm Password*</span>
+              <input
+                type="password"
+                name="confirm-password"
+                class="u-br-xxs"
+                id="password"
+                required
+              />
             </label>
           </div>
 
           <div class="row">
-            <button class="button-pri u-spacer-sm u-br-xxs" type="submit">Create Account</button>
+            <button class="button-pri u-spacer-sm u-br-xxs" type="submit">
+              Create Account
+            </button>
           </div>
         </form>
 
